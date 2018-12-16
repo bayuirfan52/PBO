@@ -30,6 +30,12 @@ public class PerhitunganActivity extends AppCompatActivity {
         setFragment(id, savedInstanceState);
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
+
     public void setFragment(int id, Bundle savedInstanceState) {
         if (savedInstanceState == null) {
             switch (id) {
