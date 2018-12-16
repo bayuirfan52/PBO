@@ -46,11 +46,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
+                android:inputType="numberDecimal"
                 android:hint="@string/masukkan_tinggi" />
         </android.support.design.widget.TextInputLayout>
 
 
-        <Button android:id="@+id/btn_hitung"
+        <Button android:id="@+id/btn_hitungTabung"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/hitung"

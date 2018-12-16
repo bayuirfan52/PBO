@@ -26,7 +26,7 @@ public class Tube extends Shape implements BangunRuang{
     }
 
     @Override
-    double getLuas() {
+    public double getLuas() {
         double luasSelimut = pi * jariJari * 2 * tinggi;
         return getLuasAlas() * 2 + luasSelimut;
     }

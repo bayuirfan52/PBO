@@ -13,7 +13,7 @@ public class Circle extends Shape implements BangunDatar{
     }
 
     @Override
-    double getLuas() {
+    public double getLuas() {
         return pi * Math.pow(jariJari, 2);
     }
 

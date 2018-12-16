@@ -17,7 +17,7 @@ public class Ball extends Shape implements BangunRuang {
     }
 
     @Override
-    double getLuas() {
+    public double getLuas() {
         return 4 * pi * Math.pow(jariJari, 2);
     }
 
