@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.tigaDimensi :
                         setFragment(new TigaDimensiFragment(),savedInstanceState);
                         break;
+                    default:
+                        setFragment(new DuaDimensiFragment(), savedInstanceState);
+                        break;
                 }
                 return true;
             }
