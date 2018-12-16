@@ -17,7 +17,7 @@ public class Cube extends Shape implements BangunRuang{
     }
 
     @Override
-    double getLuas() {
+    public double getLuas() {
         return Math.pow(panjang, 2)*6;
     }
 
