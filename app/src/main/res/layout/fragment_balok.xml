@@ -30,68 +30,100 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/input_panjang"
+                android:id="@+id/input_panjangBalok"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
                 android:inputType="numberDecimal"
-                android:hint="Masukkan Panjang" />
+                android:hint="@string/masukkan_panjang" />
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/input_lebar"
+                android:id="@+id/input_lebarBalok"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
-                android:hint="Masukkan Lebar" />
+                android:inputType="numberDecimal"
+                android:hint="@string/masukkan_lebar" />
         </android.support.design.widget.TextInputLayout>
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/input_tinggi"
+                android:id="@+id/input_tinggiBalok"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
-                android:hint="Masukkan Tinggi" />
+                android:inputType="numberDecimal"
+                android:hint="@string/masukkan_tinggi" />
         </android.support.design.widget.TextInputLayout>
 
-        <Button android:id="@+id/btn_hitung"
+        <Button android:id="@+id/btn_hitungBalok"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Hitung"
+            android:text="@string/hitung"
             android:background="@color/colorPrimary"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button"
             android:textColor="@android:color/white"/>
 
-        <android.support.design.widget.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp">
-
-            <EditText
-                android:id="@+id/luas"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/volume"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="none"
-                android:hint="Volume Balok" />
-        </android.support.design.widget.TextInputLayout>
+                android:textSize="@dimen/vol"
+                android:layout_margin="@dimen/margin_output"
+                android:textAlignment="center"
+                android:padding="@dimen/padding"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/VolumeBalok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_margin="@dimen/margin_output"
+                android:text="@string/nol"
+                android:textSize="@dimen/vol"
+                android:padding="@dimen/padding"
+                android:layout_weight="1"/>
+        </LinearLayout>
 
-        <android.support.design.widget.TextInputLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/luas_permukaan"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/luas_per"
+            android:layout_margin="@dimen/margin_output"
+            android:textAlignment="center"
+            android:padding="@dimen/padding"
+            android:layout_weight="1"/>
 
-            <EditText
-                android:id="@+id/luas_permukaan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="none"
-                android:hint="Luas Permukaan Balok" />
-        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/LuasBalok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_output"
+            android:background="@drawable/box"
+            android:text="@string/nol"
+            android:textSize="@dimen/vol"
+            android:padding="@dimen/padding"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
 
     </LinearLayout>
 

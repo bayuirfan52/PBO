@@ -3,4 +3,13 @@
     <string name="tiga_dimensi">3 Dimensi</string>
     <string name="dua_dimensi">2 Dimensi</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nol">0</string>
+    <string name="hitung">Hitung</string>
+    <string name="masukkan_tinggi">Masukkan Tinggi</string>
+    <string name="masukkan_panjang">Masukkan Panjang</string>
+    <string name="masukkan_lebar">Masukkan Lebar</string>
+    <string name="volume">Volume</string>
+    <string name="luas_permukaan">Luas Permukaan</string>
+    <string name="luas">Luas</string>
+    <string name="keliling">Keliling</string>
 </resources>

@@ -30,7 +30,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/input_jari"
+                android:id="@+id/input_jariLingkaran"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
@@ -38,38 +38,65 @@
                 android:hint="Masukkan Jari-Jari" />
         </android.support.design.widget.TextInputLayout>
 
-        <Button android:id="@+id/btn_hitung"
+        <Button android:id="@+id/btn_hitungLingkaran"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Hitung"
             android:background="@color/colorPrimary"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button"
             android:textColor="@android:color/white"/>
 
-        <android.support.design.widget.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp">
-
-            <EditText
-                android:id="@+id/luas"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/luas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="none"
-                android:hint="Luas Lingkaran" />
-        </android.support.design.widget.TextInputLayout>
+                android:textSize="@dimen/vol"
+                android:layout_margin="@dimen/margin_output"
+                android:textAlignment="center"
+                android:padding="@dimen/padding"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/LuasLingkaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_margin="@dimen/margin_output"
+                android:text="@string/nol"
+                android:textSize="@dimen/vol"
+                android:padding="@dimen/padding"
+                android:layout_weight="1"/>
+        </LinearLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/luas_permukaan"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/keliling"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="none"
-                android:hint="Keliling Lingkaran" />
-        </android.support.design.widget.TextInputLayout>
+                android:textSize="@dimen/vol"
+                android:layout_margin="@dimen/margin_output"
+                android:textAlignment="center"
+                android:padding="@dimen/padding"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/KelilingLingkaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_output"
+                android:background="@drawable/box"
+                android:text="@string/nol"
+                android:textSize="@dimen/vol"
+                android:padding="@dimen/padding"
+                android:layout_weight="1"/>
+        </LinearLayout>
 
     </LinearLayout>
 

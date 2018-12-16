@@ -30,7 +30,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/input_jari"
+                android:id="@+id/input_jariTabung"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/input_tinggi"
+                android:id="@+id/input_tinggiTabung"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
@@ -55,34 +55,60 @@
             android:layout_height="wrap_content"
             android:text="Hitung"
             android:background="@color/colorPrimary"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button"
             android:textColor="@android:color/white"/>
 
-        <android.support.design.widget.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp">
-
-            <EditText
-                android:id="@+id/volume"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/volume"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="none"
-                android:hint="Volume Balok" />
-        </android.support.design.widget.TextInputLayout>
+                android:textSize="@dimen/vol"
+                android:layout_margin="@dimen/margin_output"
+                android:textAlignment="center"
+                android:padding="@dimen/padding"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/VolumeTabung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_margin="@dimen/margin_output"
+                android:text="@string/nol"
+                android:textSize="@dimen/vol"
+                android:padding="@dimen/padding"
+                android:layout_weight="1"/>
+        </LinearLayout>
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/keliling"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/luas_permukaan"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/luas_permukaan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="none"
-                android:hint="Luas Permukaan Tabung" />
-        </android.support.design.widget.TextInputLayout>
+                android:textSize="@dimen/luas_per"
+                android:layout_margin="@dimen/margin_output"
+                android:textAlignment="center"
+                android:padding="@dimen/padding"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/LuasTabung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_output"
+                android:background="@drawable/box"
+                android:text="@string/nol"
+                android:textSize="@dimen/vol"
+                android:padding="@dimen/padding"
+                android:layout_weight="1"/>
+        </LinearLayout>
 
     </LinearLayout>
 
