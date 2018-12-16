@@ -6,9 +6,10 @@
     tools:context=".fragment.TigaDimensiFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_menu3D"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/tiga_dimensi" />
+        tools:listitem="@layout/item_grid_menu"/>
 
 </FrameLayout>
