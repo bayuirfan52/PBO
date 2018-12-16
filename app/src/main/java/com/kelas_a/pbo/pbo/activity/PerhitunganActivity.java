@@ -3,6 +3,7 @@ package com.kelas_a.pbo.pbo.activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 
 import com.kelas_a.pbo.pbo.R;
 import com.kelas_a.pbo.pbo.fragment.Balok;
@@ -34,6 +35,18 @@ public class PerhitunganActivity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         finish();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
     }
 
     public void setFragment(int id, Bundle savedInstanceState) {
