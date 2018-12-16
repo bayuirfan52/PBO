@@ -1,10 +1,10 @@
 package com.kelas_a.pbo.pbo.activity;
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.kelas_a.pbo.pbo.R;
@@ -32,13 +32,12 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.tigaDimensi :
                         setFragment(new TigaDimensiFragment(),savedInstanceState);
                         break;
-                    default:
-                        setFragment(new DuaDimensiFragment(), savedInstanceState);
-                        break;
                 }
                 return true;
             }
         });
+
+        bottomNavigationView.setSelectedItemId(R.id.duaDimensi);
     }
 
     private void setFragment(Fragment fragment, Bundle savedInstanceState){
