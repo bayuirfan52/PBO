@@ -15,14 +15,14 @@ public class PerhitunganActivity extends AppCompatActivity {
         setContentView(R.layout.activity_perhitungan);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        int id = getIntent().getIntExtra("id", 1);
+        Bundle bundle = getIntent().getExtras();
+        assert bundle != null;
+        int id = bundle.getInt("id");
 
         setFragment(id, savedInstanceState);
     }
 
     public void setFragment(int id, Bundle savedInstanceState) {
-        Bundle bundle = getIntent().getExtras();
-        id = bundle.getInt("id");
         if (savedInstanceState == null) {
             switch (id) {
                 case 1:
