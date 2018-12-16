@@ -21,6 +21,8 @@ public class PerhitunganActivity extends AppCompatActivity {
     }
 
     public void setFragment(int id, Bundle savedInstanceState) {
+        Bundle bundle = getIntent().getExtras();
+        id = bundle.getInt("id");
         if (savedInstanceState == null) {
             switch (id) {
                 case 1:
