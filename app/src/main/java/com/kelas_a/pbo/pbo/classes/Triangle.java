@@ -1,6 +1,6 @@
 package com.kelas_a.pbo.pbo.classes;
 
-public class Triangle extends Shape {
+public class Triangle extends Shape implements BangunDatar{
     private double alas;
     private double tinggi;
 
@@ -25,7 +25,7 @@ public class Triangle extends Shape {
     }
 
     @Override
-    double getKeliling() {
+    public double getKeliling() {
         return getSisiMiring(alas,tinggi) * 2 + alas;
     }
 }

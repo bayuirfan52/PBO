@@ -1,6 +1,6 @@
 package com.kelas_a.pbo.pbo.classes;
 
-public class Block extends Shape {
+public class Block extends Shape implements BangunRuang{
     private double panjang;
     private double lebar;
 
@@ -17,20 +17,18 @@ public class Block extends Shape {
         this.lebar = lebar;
         this.tinggi = tinggi;
     }
-    double getVolume(){
+
+    @Override
+    public double getVolume(){
         return panjang * lebar * tinggi;
     }
+
     @Override
     double getLuas() {
         double luasPanjang = panjang * lebar;
         double luasLebar = lebar * tinggi;
         double luasTinggi = panjang*tinggi;
         return (luasPanjang + luasLebar + luasTinggi) * 2;
-    }
-
-    @Override
-    double getKeliling() {
-        return 0;
     }
 
     @Override

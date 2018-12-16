@@ -15,7 +15,6 @@ public abstract class Shape {
     }
     
     abstract double getLuas();
-    abstract double getKeliling();
 
     public double getLebar() {
         return lebar;

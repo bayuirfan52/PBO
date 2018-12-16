@@ -1,6 +1,6 @@
 package com.kelas_a.pbo.pbo.classes;
 
-public class Ball extends Shape {
+public class Ball extends Shape implements BangunRuang {
     private double jariJari;
     private double pi = 3.14;
 
@@ -11,6 +11,7 @@ public class Ball extends Shape {
         this.jariJari = jariJari;
     }
 
+    @Override
     public double getVolume(){
         return 4/3 * pi * Math.pow(jariJari, 3);
     }
@@ -18,11 +19,6 @@ public class Ball extends Shape {
     @Override
     double getLuas() {
         return 4 * pi * Math.pow(jariJari, 2);
-    }
-
-    @Override
-    double getKeliling() {
-        return 0;
     }
 
     public double getJariJari() {

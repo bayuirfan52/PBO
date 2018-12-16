@@ -1,6 +1,6 @@
 package com.kelas_a.pbo.pbo.classes;
 
-public class Square extends Shape {
+public class Square extends Shape implements BangunDatar{
 
     private double panjang;
 
@@ -19,7 +19,7 @@ public class Square extends Shape {
     }
 
     @Override
-    double getKeliling() {
+    public double getKeliling() {
         return panjang * 4;
     }
 

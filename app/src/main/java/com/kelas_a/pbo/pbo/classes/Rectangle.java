@@ -1,6 +1,6 @@
 package com.kelas_a.pbo.pbo.classes;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements BangunDatar{
 
     private double panjang;
     private double lebar;
@@ -30,7 +30,7 @@ public class Rectangle extends Shape {
     }
 
     @Override
-    double getKeliling() {
+    public double getKeliling() {
         return (panjang + lebar) * 2;
     }
 

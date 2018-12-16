@@ -1,6 +1,6 @@
 package com.kelas_a.pbo.pbo.classes;
 
-public class Tube extends Shape {
+public class Tube extends Shape implements BangunRuang{
     private double jariJari;
     private double pi = 3.14;
 
@@ -16,9 +16,11 @@ public class Tube extends Shape {
         this.tinggi = tinggi;
     }
 
-    double getVolume(){
+    @Override
+    public double getVolume(){
         return getLuasAlas() * tinggi;
     }
+
     double getLuasAlas(){
         return pi * Math.pow(jariJari, 2);
     }
@@ -27,11 +29,6 @@ public class Tube extends Shape {
     double getLuas() {
         double luasSelimut = pi * jariJari * 2 * tinggi;
         return getLuasAlas() * 2 + luasSelimut;
-    }
-
-    @Override
-    double getKeliling() {
-        return 0;
     }
 
     public double getJariJari() {

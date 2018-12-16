@@ -1,6 +1,6 @@
 package com.kelas_a.pbo.pbo.classes;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements BangunDatar{
     private double jariJari;
     private double pi = 3.14;
 
@@ -18,7 +18,7 @@ public class Circle extends Shape {
     }
 
     @Override
-    double getKeliling() {
+    public double getKeliling() {
         return pi * (jariJari * 2);
     }
 

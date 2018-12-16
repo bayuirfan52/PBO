@@ -1,6 +1,6 @@
 package com.kelas_a.pbo.pbo.classes;
 
-public class Cube extends Shape {
+public class Cube extends Shape implements BangunRuang{
     private double panjang;
 
     public Cube(){
@@ -10,17 +10,15 @@ public class Cube extends Shape {
     public Cube (double panjang){
         this.panjang = panjang;
     }
-    double getVolume(){
-        return Math.pow(panjang,3);
-    }
+
     @Override
-    double getLuas() {
-        return Math.pow(panjang, 2)*6;
+    public double getVolume(){
+        return Math.pow(panjang,3);
     }
 
     @Override
-    double getKeliling() {
-        return 0;
+    double getLuas() {
+        return Math.pow(panjang, 2)*6;
     }
 
     @Override
