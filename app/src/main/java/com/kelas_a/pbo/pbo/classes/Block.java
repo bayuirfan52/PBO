@@ -24,7 +24,7 @@ public class Block extends Shape implements BangunRuang{
     }
 
     @Override
-    double getLuas() {
+    public double getLuas() {
         double luasPanjang = panjang * lebar;
         double luasLebar = lebar * tinggi;
         double luasTinggi = panjang*tinggi;
