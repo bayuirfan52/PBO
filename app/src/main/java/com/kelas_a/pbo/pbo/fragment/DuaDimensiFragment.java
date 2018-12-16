@@ -14,10 +14,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.kelas_a.pbo.pbo.ItemClickSupport;
 import com.kelas_a.pbo.pbo.MenuGridAdapter;
 import com.kelas_a.pbo.pbo.R;
+import com.kelas_a.pbo.pbo.activity.PerhitunganActivity;
 import com.kelas_a.pbo.pbo.classes.MenuData;
 import com.kelas_a.pbo.pbo.classes.TampilanMenu;
 
@@ -55,13 +57,6 @@ public class DuaDimensiFragment extends Fragment {
 
         mAdapter.setListMenu(list);
         rvMenu.setAdapter(mAdapter);
-        ItemClickSupport.addTo(rvMenu).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
-            @Override
-            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
-                
-            }
-        });
-
 
         return v;
     }
@@ -69,6 +64,19 @@ public class DuaDimensiFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        ItemClickSupport.addTo(rvMenu).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
+            @Override
+            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+                showSelectedItem(list.get(position));
+            }
+        });
     }
+
+    private void showSelectedItem(TampilanMenu tampilanMenu) {
+        Toast.makeText(getActivity(), "Kamu memilih "+ tampilanMenu.getId(), Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(getContext(),PerhitunganActivity.class);
+        intent.putExtra("id", tampilanMenu.getId());
+        getContext().startActivity(intent);
+    }
+
 }
