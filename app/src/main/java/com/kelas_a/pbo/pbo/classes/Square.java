@@ -13,7 +13,7 @@ public class Square extends Shape implements BangunDatar{
     }
 
     @Override
-    double getLuas() {
+    public double getLuas() {
         double luas = panjang * panjang;
         return luas;
     }
