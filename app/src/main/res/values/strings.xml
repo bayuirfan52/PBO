@@ -12,4 +12,14 @@
     <string name="luas_permukaan">Luas Permukaan</string>
     <string name="luas">Luas</string>
     <string name="keliling">Keliling</string>
+    <string name="masukkan_jari_jari">Masukkan Jari-jari</string>
+    <string name="bola">Bola</string>
+    <string name="kubus">Kubus</string>
+    <string name="masukkan_panjang_sisi">Masukkan Panjang Sisi</string>
+    <string name="lingkaran">Lingkaran</string>
+    <string name="persegi">Persegi</string>
+    <string name="persegi_panjang">Persegi Panjang</string>
+    <string name="segitiga">Segitiga</string>
+    <string name="masukkan_panjang_alas">Masukkan Panjang Alas</string>
+    <string name="tabung">Tabung</string>
 </resources>
