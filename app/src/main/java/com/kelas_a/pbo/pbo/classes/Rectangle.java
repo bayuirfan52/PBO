@@ -15,7 +15,7 @@ public class Rectangle extends Shape implements BangunDatar{
     }
 
     @Override
-    double getLuas() {
+    public double getLuas() {
         return panjang * lebar;
     }
 

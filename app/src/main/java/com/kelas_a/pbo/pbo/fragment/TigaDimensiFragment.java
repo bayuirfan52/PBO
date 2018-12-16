@@ -73,7 +73,6 @@ public class TigaDimensiFragment extends Fragment {
     }
 
     private void showSelectedItem(TampilanMenu tampilanMenu) {
-        Toast.makeText(getActivity(), "Kamu memilih "+ tampilanMenu.getId(), Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getContext(),PerhitunganActivity.class);
         intent.putExtra("id", tampilanMenu.getId());
         getContext().startActivity(intent);

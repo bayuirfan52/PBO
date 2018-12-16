@@ -20,7 +20,7 @@ public class Triangle extends Shape implements BangunDatar{
     }
 
     @Override
-    double getLuas() {
+    public double getLuas() {
         return 0.5 * alas * tinggi;
     }
 
