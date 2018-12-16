@@ -13,7 +13,11 @@ public class PerhitunganActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perhitungan);
-        
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        int id = getIntent().getIntExtra("id", 1);
+
+        setFragment(id, savedInstanceState);
     }
 
     public void setFragment(int id, Bundle savedInstanceState) {
